@@ -1,0 +1,108 @@
+.k-widget.k-scheduler > div:last-of-type {
+  display: none;
+}
+
+.k-window.k-dialog > div:last-of-type {
+  display: none;
+}
+
+.scheduler .k-major-cell {
+  @apply invisible;
+}
+
+.time-label .k-scheduler-layout {
+  @apply overflow-hidden;
+}
+
+.k-scheduler-body {
+  @apply mt-5;
+}
+
+.k-scheduler-head,
+.k-scheduler-body {
+  @apply ml-2;
+}
+
+div.k-scheduler-head > div:nth-child(2) {
+  @apply hidden;
+}
+
+div.k-scheduler-head > div:nth-child(1) > div:nth-child(2) {
+  @apply hidden;
+}
+
+.k-scheduler-group.k-group-horizontal:first-child .k-nonwork-hour {
+  @apply border-dashed border-t-2;
+}
+
+.scheduler-item {
+  @apply bg-[rgb(254,239,234)] text-black rounded-md py-2 px-3 space-y-1;
+}
+
+.k-marquee-color {
+  @apply bg-inherit;
+}
+
+.k-marquee-text {
+  @apply text-black text-lg;
+}
+
+.k-scheduler-marquee.k-marquee {
+  @apply bg-[rgb(254,239,234)];
+}
+
+/* .k-scheduler-body > .k-event-drag-hint {
+    @apply bg-yellow-600;
+  } */
+
+/* .k-event.k-event-drag-hint.scheduler-item:hover {
+    @apply hidden;
+  } */
+
+.k-scheduler-cell.k-heading-cell.k-side-cell {
+  @apply border-none -mt-5;
+}
+
+.k-scheduler-nonwork,
+.k-scheduler .k-nonwork-hour {
+  background-color: inherit !important;
+}
+
+/* .k-scheduler-head {
+    display: none !important;
+  } */
+
+#root
+  > div
+  > div
+  > div.k-scheduler-layout.k-scheduler-layout-flex.k-scheduler-day-view
+  > div.k-scheduler-head
+  > div:nth-child(2) {
+  display: none !important;
+}
+
+#root
+  > div
+  > div
+  > div.k-scheduler-layout.k-scheduler-layout-flex.k-scheduler-day-view
+  > div.k-scheduler-head
+  > div:nth-child(1)
+  > div:nth-child(2) {
+  display: none !important;
+}
+
+.k-scheduler-cell.k-heading-cell,
+.k-scheduler-cell.k-side-cell {
+  @apply border-none;
+}
+
+.k-scheduler-head .k-scheduler-cell.k-heading-cell {
+  @apply bg-primary-purple text-white font-light rounded-t-md mt-3 mx-1;
+}
+
+.k-scheduler-head .k-scheduler-cell.k-heading-cell:nth-child(even) {
+  @apply bg-primary-red;
+}
+/* .k-rtl .k-event {
+    padding-right: auto;
+  } */
